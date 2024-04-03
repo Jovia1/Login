@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Login</string>
+    <string name="login_title">Login</string>
+    <string name="button_title">Login</string>
+    <string name="register_title">Register Form</string>
+    <string name="register_text">Register</string>
 </resources>

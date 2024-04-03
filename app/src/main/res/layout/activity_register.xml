@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/loginTitle"
+        android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_title"
+        android:text="@string/register_title"
         android:textSize="@dimen/big_textsize"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:layout_below="@+id/loginTitle"
-        android:layout_marginTop="@dimen/middle_margin" />
+        android:layout_below="@+id/registerTitle"
+        android:layout_marginTop="@dimen/middle_margin"/>
 
     <EditText
         android:id="@+id/passwordField"
@@ -35,35 +35,22 @@
         android:layout_below="@+id/emailField"
         android:layout_marginTop="@dimen/small_margin" />
 
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/c_passwordField"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_title"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
         android:layout_below="@+id/passwordField"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/middle_margin" />
-
-    <TextView
-        android:id="@+id/errorText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FF0000"
-        android:layout_below="@+id/loginButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/small_margin"
-        android:visibility="gone" />
+        android:layout_marginTop="@dimen/small_margin" />
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register_text"
-        android:layout_below="@id/loginButton"
-        android:textSize="12dp"
+        android:layout_below="@+id/c_passwordField"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/big_margin"
-
-        />
+        android:layout_marginTop="@dimen/middle_margin" />
 
 </RelativeLayout>
